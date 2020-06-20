@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage{kantlipsum}
+\usepackage[doublespacing]{setspace}
+\usepackage{fontspec}
+\usepackage{listings}
+\defaultfontfeatures{LetterSpace=50}
+\setmainfont{Latin Modern Roman}
+\lstset{
+  columns=fullflexible,
+  breaklines=true
+}
+\usepackage{tikz}
+\usetikzlibrary{matrix}
+
+\begin{document}
+% \kant[1]  % produces paragraph 23 to 34
+
+%\begin{lstlisting}
+%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum nibh nulla, quis mattis dui feugiat a. Quisque dictum neque lacus, et semper augue convallis non. Suspendisse nunc tortor, vestibulum ac ex vel, finibus fermentum neque. Cras sollicitudin facilisis bibendum. Nullam a pretium nisl, ac euismod neque. Donec consectetur massa est, et porttitor mauris convallis in. Cras ac nunc gravida, faucibus dui at, commodo felis. Duis at elit non sem aliquam ullamcorper. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras id dictum ligula, et convallis dolor. Praesent elementum risus velit, eget tincidunt odio venenatis vel. Suspendisse potenti
+%\end{lstlisting}
+
+\begin{tikzpicture}
+%\draw[step=0.5cm,color=gray] (-1,-1) grid (1,1);
+\matrix[matrix of nodes,nodes={inner sep=0pt,text width=.5cm,align=center,minimum height=.5cm}]{
+A & B & C &A & B & C &A & B & C &A & B & C &A & B & C &A & B & C &A & B & C & D \\
+E & F & G &E & F & G &E & F & G &E & F & G &E & F & G &E & F & G &E & F & G & H \\
+I & J & K &I & J & K &I & J & K &I & J & K &I & J & K &I & J & K &I & J & K & L \\
+M & N & O &M & N & O &M & N & O &M & N & O &M & N & O &M & N & O &M & N & O & P\\
+A & B & C &A & B & C &A & B & C &A & B & C &A & B & C &A & B & C &A & B & C & D \\
+E & F & G &E & F & G &E & F & G &E & F & G &E & F & G &E & F & G &E & F & G & H \\
+I & J & K &I & J & K &I & J & K &I & J & K &I & J & K &I & J & K &I & J & K & L \\
+M & N & O &M & N & O &M & N & O &M & N & O &M & N & O &M & N & O &M & N & O & P\\
+A & B & C &A & B & C &A & B & C &A & B & C &A & B & C &A & B & C &A & B & C & D \\
+E & F & G &E & F & G &E & F & G &E & F & G &E & F & G &E & F & G &E & F & G & H \\
+I & J & K &I & J & K &I & J & K &I & J & K &I & J & K &I & J & K &I & J & K & L \\
+M & N & O &M & N & O &M & N & O &M & N & O &M & N & O &M & N & O &M & N & O & P\\
+A & B & C &A & B & C &A & B & C &A & B & C &A & B & C &A & B & C &A & B & C & D \\
+E & F & G &E & F & G &E & F & G &E & F & G &E & F & G &E & F & G &E & F & G & H \\
+I & J & K &I & J & K &I & J & K &I & J & K &I & J & K &I & J & K &I & J & K & L \\
+M & N & O &M & N & O &M & N & O &M & N & O &M & N & O &M & N & O &M & N & O & P\\
+A & B & C &A & B & C &A & B & C &A & B & C &A & B & C &A & B & C &A & B & C & D \\
+E & F & G &E & F & G &E & F & G &E & F & G &E & F & G &E & F & G &E & F & G & H \\
+I & J & K &I & J & K &I & J & K &I & J & K &I & J & K &I & J & K &I & J & K & L \\
+M & N & O &M & N & O &M & N & O &M & N & O &M & N & O &M & N & O &M & N & O & P\\
+};
+\end{tikzpicture}
+
+\end{document}  
